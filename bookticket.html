@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Book Tickets - MovieSync</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo"> <i class="fas fa-play-circle"></i> Movie<span>Sync</span> </a>
+
+        <div class="header-right">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="movie.html">Movies</a></li>
+                    <li><a href="upcoming.html">Upcoming</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="https://keshab3.github.io/Project1/team.html" target="_blank" class="btn contact-team-btn">Team Info</a>
+        </div>
+    </header>
+
+    <section class="booking-form-section">
+        <div class="booking-form-container animate__animated animate__fadeIn">
+            <h1>Movie Ticket Form</h1>
+
+            <form action="submit.html" method="POST">
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="moviename">Movie Name:</label>
+                <input type="text" id="moviename" name="moviename" required>
+
+                <label for="cinema">Select Cinema Hall:</label>
+                <select id="cinema" name="cinema" required>
+                    <option value="" disabled selected>-- Choose a cinema --</option>
+                    <option value="qfx-civil">QFX Cinemas - Civil Mall, Kathmandu</option>
+                    <option value="qfx-labim">QFX Cinemas - Labim Mall, Lalitpur</option>
+                    <option value="qfx-kumari">QFX Cinemas - Kumari, Kathmandu</option>
+                    <option value="fcube">FCube Cinemas - KL Tower, Kathmandu</option>
+                    <option value="ini">iNi Cinemas - Lotse Mall/NB Center, Kathmandu</option>
+                    <option value="movie-garden">Movie Garden - Pokhara</option>
+                    <option value="durbar-cinemax">Durbar Cinemax - Durbar Mall, Kathmandu</option>
+                    <option value="ranjana">Ranjana Cineplex - Kathmandu</option>
+                    <option value="kirtipur">Kirtipur Cineplex - Kirtipur</option>
+                </select>
+
+                <label for="bookingdate">Booking Date:</label>
+                <input type="date" id="bookingdate" name="bookingdate" required>
+
+                <label for="tickets">Number of Tickets:</label>
+                <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone" required>
+
+                <label>Payment Method:</label>
+                <div class="payment-options">
+                    <div>
+                        <input type="radio" id="esewa" name="payment" value="esewa" required>
+                        <label for="esewa">eSewa</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="creditcard" name="payment" value="creditcard">
+                        <label for="creditcard">Credit Card</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cash" name="payment" value="cash">
+                        <label for="cash">Cash</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn submit-btn">Submit</button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            
+            <div class="footer-box">
+                <h3>MovieSync</h3>
+                <p>The best destination for Nepali and Hindi entertainment.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movie.html">Movies</a></li>
+                    <li><a href="upcoming.html">Upcoming</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Team Members</h3>
+                <ul>
+                    <li><a href="team.html#">Keshab Amgain (M25W7495)</a></li>
+                    <li><a href="team.html#">Thapa Anjana (M25W0420)</a></li>
+                    <li><a href="team.html#">Khadayat Gita Kumari (M25W0511)</a></li>
+                    <li><a href="team.html#">Khanal Anjila (M24W7357)</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">+81-9054837246</a></li>
+                    <li><a href="#">Keshabamgain3@gmail.com</a></li>
+                    <li><a href="#">Kyoto, Japan</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            &copy; 2024 MovieSync Team | All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>
