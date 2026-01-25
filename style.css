@@ -1045,9 +1045,3 @@ footer {
 }
 
 
-
-/* -- collection page -- */
-.under-development {
-    opacity: 0.5;
-    pointer-events: none;
-}
